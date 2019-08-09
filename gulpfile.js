@@ -3,7 +3,7 @@
 // Load plugins
 const autoprefixer = require("gulp-autoprefixer");
 const browsersync = require("browser-sync").create();
-const cleanCSS = require("gulp-clean-css");
+// const cleanCSS = require("gulp-clean-css");
 const del = require("del");
 const gulp = require("gulp");
 const header = require("gulp-header");
@@ -91,7 +91,7 @@ function css() {
     .pipe(rename({
       suffix: ".min"
     }))
-    .pipe(cleanCSS())
+    // .pipe(cleanCSS())
     .pipe(gulp.dest("./css"))
     .pipe(browsersync.stream());
 }
