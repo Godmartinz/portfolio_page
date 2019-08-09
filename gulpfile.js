@@ -28,9 +28,9 @@ const banner = ['/*!\n',
 // BrowserSync
 function browserSync(done) {
   browsersync.init({
-    open: false,
+    open: "false",
     server: {
-      baseDir: "https://godfreyportfolio.herokuapp.com/"
+      baseDir: "./"
     },
     port: 3000
   });
