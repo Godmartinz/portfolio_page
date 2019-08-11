@@ -34,7 +34,7 @@ function browserSync(done) {
     // },
     open: false,
     port: process.env.PORT || 5000,
-    proxy: "https://godfreyportfolio.herokuapp.com/",
+    // proxy: "https://godfreyportfolio.herokuapp.com/",
     notify: false,
     browser: ["google chrome"]
   });
