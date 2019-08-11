@@ -28,12 +28,13 @@ const banner = ['/*!\n',
 // BrowserSync
 function browserSync(done) {
   browsersync.init({
-    
-    server: {
-      baseDir: "./",
-      port: process.env.PORT
-    },
-        open: false,
+   
+    // server: {
+    //   baseDir: "./",      
+    // },
+    open: false,
+    port: process.env.PORT || 5000,
+    proxy: "https://godfreyportfolio.herokuapp.com/",
     notify: false,
     browser: ["google chrome"]
   });
