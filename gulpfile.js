@@ -30,7 +30,8 @@ function browserSync(done) {
   browsersync.init({
     
     server: {
-      baseDir: "./"
+      baseDir: "./",
+      port: process.env.PORT
     },
         open: false,
     notify: false,
